@@ -4,7 +4,7 @@ import HubtelLogo from '../assets/hubtel-logo.png';
 
 const Navbar: React.FC = () => {
   return (
-    <nav className="bg-white py-4 border-b">
+    <nav className="bg-white py-4 border-b sticky top-0 z-50">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center">
           <div className="flex items-center space-x-12">
