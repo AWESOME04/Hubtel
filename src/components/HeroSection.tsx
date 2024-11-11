@@ -5,12 +5,12 @@ import Location from '../assets/location-img.svg';
 const HeroSection: React.FC = () => {
   return (
     <section className="bg-[#FFFBF2] min-h-[80vh] flex items-center relative overflow-hidden">
-      <div className="container mx-auto flex flex-col-reverse md:flex-row items-center">
-        <div className="md:w-1/2 text-center md:text-left mb-10 md:mb-0 mr-0 md:mr-12 lg:mr-20 px-8">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">
+      <div className="mx-auto flex flex-col-reverse md:flex-row items-center md:justify-between">
+        <div className="md:w-1/2 text-center md:text-left mb-8 md:mb-0 md:mr-8 lg:mr-12 px-16">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">
             Find and pay <br /> for everyday essentials
           </h1>
-          <p className="text-lg md:text-xl text-gray-700 mb-10">
+          <p className="text-lg md:text-xl text-gray-700 mb-8">
             from local retailers, food vendors and service providers
           </p>
 
@@ -27,14 +27,14 @@ const HeroSection: React.FC = () => {
             </a>
           </div>
         </div>
-      </div>
-      <div className="md:w-1/2 flex justify-end mb-10 md:mb-0 md:-mr-4">
+        <div className="md:w-1/2 flex justify-end mb-8 md:mb-0 md:-mr-2 lg:-mr-6 w-full">
           <img
             src={HeroSectionImg}
             alt="Product Basket"
-            className="w-96 md:w-full object-contain"
+            className="w-full h-full object-cover"
           />
         </div>
+      </div>
     </section>
   );
 };
