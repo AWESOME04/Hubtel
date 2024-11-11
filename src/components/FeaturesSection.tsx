@@ -43,7 +43,7 @@ const FeaturesSection: React.FC = () => {
             <div
               key={feature.id}
               className={`p-6 rounded-lg cursor-pointer transition-all duration-300 relative ${
-                activeFeature.id === feature.id ? 'bg-[#F5FBF9]' : 'hover:bg-[#F5FBF9]'
+                activeFeature.id === feature.id ? 'bg-[#F5FBF9]' : 'bg-white hover:bg-[#F5FBF9]'
               }`}
               onMouseEnter={() => setActiveFeature(feature)}
             >
