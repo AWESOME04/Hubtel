@@ -7,7 +7,10 @@ const Navbar: React.FC = () => {
     <nav className="bg-white py-4 border-b sticky top-0 z-50">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center">
-          <img src={HubtelLogo} alt="Hubtel Logo" className="h-8" />
+          <Link to='/'>
+            <img src={HubtelLogo} alt="Hubtel Logo" className="h-8" />
+          </Link>
+          
           <ul className="flex space-x-12">
             <li>
               <Link to="/" className="text-black font-medium hover:text-teal-500 border-b-2 border-teal-500 pb-4">
