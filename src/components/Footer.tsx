@@ -1,8 +1,8 @@
 import React from 'react';
-import HubtelImg from '../assets/hubtel-logo.png';
-import { FaGooglePlay } from "react-icons/fa6";
-import { IoLogoAppleAppstore } from "react-icons/io5";
-import { TbBrandAppgallery } from "react-icons/tb";
+import HubtelImg from '../assets/hubtel-footer.png';
+import GooglePlay from '../assets/google-play.png';
+import AppStore from '../assets/app-store.png';
+import AppGallery from '../assets/huawei-download.png';
 import { CiLinkedin } from "react-icons/ci";
 import { FaInstagram } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
@@ -10,13 +10,12 @@ import { FaFacebook } from "react-icons/fa";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-[#FFF8E7] pt-16 pb-8">
+    <footer className="bg-[#FFF4CC] pt-16 pb-8">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <img src={HubtelImg} alt="Hubtel" className="h-8" />
-              <span className="text-teal-500">pledge</span>
+              <img src={HubtelImg} alt="Hubtel" className="h-20" />
             </div>
             <p className="text-gray-500">
               For our communities;<br />
@@ -46,9 +45,9 @@ const Footer: React.FC = () => {
             <h3 className="text-xl font-semibold mb-4">Install the app</h3>
             <div className="flex flex-col gap-4">
               <a href="#" className="inline-block flex">
-                <FaGooglePlay />
-                <IoLogoAppleAppstore/>
-                < TbBrandAppgallery/>
+                <img src={GooglePlay} alt="" className='px-2 h-8' />
+                <img src={AppStore} alt="" className='px-2 h-8'/>
+                <img src={AppGallery} alt="" className='h-8' />
               </a>
             </div>
           </div>
